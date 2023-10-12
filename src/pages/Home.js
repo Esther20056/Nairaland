@@ -18,7 +18,7 @@ function Home() {
 
 useEffect(() =>{
 
-  axios.get('http://localhost:8000/getarticles/')
+  axios.get('htpps://OLamideola.pythonanywhere.com/getarticles/')
 .then((res) =>{ 
   setData(res.data)
   

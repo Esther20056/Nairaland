@@ -13,7 +13,7 @@ async function handleSubmit(e){
     // alert(form.get("last_name"))
     // alert(form.get("photo"))
 
-    await axios.post("http://localhost:8000/signup/", form)
+    await axios.post("https://OLamideola.pythonanywhere.com/signup/", form)
   .then((res) => {
     alert("account created successfully")
   })

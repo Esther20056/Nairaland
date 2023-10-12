@@ -16,7 +16,7 @@ function Details() {
   //   const info = contents.find((a => a?.id == id))
 
  useEffect(() =>{
-  axios.get(`http://localhost:8000/getarticle/${id}`)
+  axios.get(`https://OLamideola.pythonanywhere.com/getarticle/${id}`)
   .then((res) => {
    
     setData(res.data)
@@ -32,8 +32,8 @@ function Details() {
         <p  className="text-success fs-2  fs-normal" dangerouslySetInnerHTML={{
           __html: data?.description
         }}></p>
-         <img src={`http://localhost:8000/${data?.photo}`} alt={data?.title} />
-         <img src={`http://localhost:8000/${data?.photo}`} alt={data?.title} />
+         <img src={`https://OLamideola.pythonanywhere.com/${data?.photo}`} alt={data?.title} />
+         <img src={`https://OLamideola.pythonanywhere.com/${data?.photo}`} alt={data?.title} />
     </div> 
   )
 }

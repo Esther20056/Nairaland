@@ -33,7 +33,7 @@ function CreateArticle() {
         // console.log(form.get("other"));
         // console.log(post)
 
-        axios.post("http://localhost:8000/createarticle/", form)
+        axios.post("https://OLamideola.pythonanywhere.com/createarticle/", form)
         .then((res) =>{
             navigate("/")
             alert("successful")
